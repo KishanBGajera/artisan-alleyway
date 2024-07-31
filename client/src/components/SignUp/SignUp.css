@@ -1,0 +1,149 @@
+:root {
+
+    /** title font style */
+    --title-font: 'Gloock';
+  
+    /** theme font style */
+    --theme-font: 'Poppins';
+    --highlight-weight: bold;
+    --heighlight-size: 24px;
+  
+    /** theme color */
+    --theme-background-color: #ede4e0;
+    --theme-color: #a56947;
+    --theme-hover: #f8d9c7;
+    --theme-shadow: rgba(0, 0, 0, 0.684);
+    --theme-font-color: rgb(205, 204, 204);
+    --theme-button-color: rgb(238, 238, 238);
+    --theme-details-color: rgb(95, 57, 35);
+  
+  }
+  
+  * {
+    font-family: var(--theme-font);
+  }
+  
+  .App {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  
+  
+  .image-container {
+    width: 70%;
+  
+    background-image: url('https://res.cloudinary.com/diyhtrhsc/image/upload/v1722414608/login_cy6qvb.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form-container {
+    width: 30%;
+    height: 100%;
+    background-color: #F4F1ED;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -28px;
+  }
+  
+  form {
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  
+  }
+  
+  /* input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #623E2A;
+    outline: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus{
+    border: 2px solid #623E2A;
+  } */
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #623E2A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #D4B0B5;
+    color: #623E2A;
+  }
+  
+  h1 {
+    font-family: 'Gloock';
+    color: var(--theme-color);
+    font-size: 30px;
+  }
+  
+  .label-text {
+    font-family: var(--theme-font);
+    color: var(--theme-color);
+    /* color: #623E2A; */
+  }
+  
+  .Title {
+    padding-bottom: 10px;
+    justify-content: start
+  }
+  
+  .text {
+    color: var(--theme-color);
+  }
+  
+  .ShowPassword {
+    color: var(--theme-color);
+  }
+  
+  .para {
+    color: var(--theme-color);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
