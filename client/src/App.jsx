@@ -1,7 +1,6 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Container } from '@mui/material';
+
 import Home from "./components/Home/Home"
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -15,7 +14,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Container>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -25,9 +23,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
-      </Container>
     </Router>
   );
 };
 
-export default App;
+export default App;
