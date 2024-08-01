@@ -9,6 +9,7 @@ import Explore from './components/Explore/Explore';
 import Locality from './components/Locality/Locality';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import Cart from './components/Cart/Cart';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/locality" element={<Locality />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
     </Router>
   );
